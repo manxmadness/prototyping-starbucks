@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 31 31" enable-background="new 0 0 31 31" xml:space="preserve">
+<title>arrow</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	
+		<g id="arrow" transform="translate(15.500000, 15.500000) rotate(-180.000000) translate(-15.500000, -15.500000) translate(0.000000, 0.000000)">
+		<g id="Group">
+			<g id="Shape">
+				<path fill="#C67E09" d="M15.5,0C6.955,0,0,6.95,0,15.495C0,24.044,6.955,31,15.5,31S31,24.044,31,15.495
+					C31,6.95,24.045,0,15.5,0L15.5,0L15.5,0z M15.5,28.18c-6.993,0-12.68-5.688-12.68-12.686C2.82,8.502,8.507,2.82,15.5,2.82
+					s12.68,5.682,12.68,12.675C28.18,22.493,22.493,28.18,15.5,28.18L15.5,28.18L15.5,28.18z"/>
+				<path fill="#C67E09" d="M15.858,21.862c0.477,0.473,1.25,0.473,1.726,0c0.477-0.473,0.477-1.241,0-1.715L12.861,15.5
+					l4.723-4.647c0.477-0.473,0.477-1.241,0-1.715c-0.238-0.237-0.551-0.355-0.863-0.355s-0.625,0.119-0.863,0.355l-5.542,5.504
+					c-0.477,0.473-0.477,1.241,0,1.715L15.858,21.862L15.858,21.862z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

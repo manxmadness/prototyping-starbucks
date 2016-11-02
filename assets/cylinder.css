@@ -1,0 +1,155 @@
+
+body  {background:#ffffff;
+  color:rgb(236,132,57)}
+
+h1  {font:small-caps 167% Arial,Helvetica,sans-serif}
+  .new{
+    height: 500px;
+    width:250px;
+    overflow: hidden;
+    top: -100px;
+    position: absolute;
+  }
+#containerSpin {
+  text-align:center;
+  margin:0 auto;
+  /*top:450px;*/
+  width:550px;
+  -moz-perspective: 1000px;    
+  -webkit-perspective: 1000px}
+  
+/*#container:hover * {
+  -moz-animation-play-state:paused;
+  -webkit-animation-play-state:paused}*/
+    
+#frame {width: 33px;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;  /* translate must be last */
+  -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(125px,70px,50px);
+  -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate3d(125px,70px,50px);}
+  
+.stripTwo {-moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-animation: spin 3s linear;
+  -webkit-animation: spin 3s linear;
+animation-fill-mode: forwards;
+}
+
+.strip div {
+  position: absolute;
+  background:  url(wrap.png);  /* background image is 792px 320px, try with green-hills or thailand-sunrise.jpg */
+  background-repeat:repeat;
+  border-width: thin 10px;
+  height:300px;
+  width:34px;
+  opacity: 100;
+}
+
+.strip .a {background-position: 0 0;
+     -moz-transform: rotateY(0deg) translateZ(124px);
+  -webkit-transform: rotateY(0deg) translateZ(124px)}
+    
+.strip .b {background-position: 759px 0;
+     -moz-transform: rotateY(15deg) translateZ(124px);
+  -webkit-transform: rotateY(15deg) translateZ(124px)}
+  
+.strip .c {background-position: 726px 0;
+     -moz-transform: rotateY(30deg) translateZ(124px);
+  -webkit-transform: rotateY(30deg) translateZ(124px)}
+  
+.strip .d {background-position: 693px 0;
+     -moz-transform: rotateY(45deg) translateZ(124px);
+  -webkit-transform: rotateY(45deg) translateZ(124px)}  
+  
+.strip .e {background-position: 660px 0;
+     -moz-transform: rotateY(60deg) translateZ(124px);
+  -webkit-transform: rotateY(60deg) translateZ(124px)}  
+  
+.strip .f {background-position: 627px 0;
+     -moz-transform: rotateY(75deg) translateZ(124px);
+  -webkit-transform: rotateY(75deg) translateZ(124px)}
+  
+.strip .g {background-position: 594px 0;
+     -moz-transform: rotateY(90deg) translateZ(124px);
+  -webkit-transform: rotateY(90deg) translateZ(124px)}
+  
+.strip .h {background-position: 561px 0;
+     -moz-transform: rotateY(105deg) translateZ(124px);
+  -webkit-transform: rotateY(105deg) translateZ(124px)} 
+  
+.strip .i {background-position: 528px 0;
+     -moz-transform: rotateY(120deg) translateZ(124px);
+  -webkit-transform: rotateY(120deg) translateZ(124px)} 
+  
+.strip .j {background-position: 495px 0;
+     -moz-transform: rotateY(135deg) translateZ(124px);
+  -webkit-transform: rotateY(135deg) translateZ(124px)}
+  
+.strip .k {background-position: 462px 0;
+     -moz-transform: rotateY(150deg) translateZ(124px);
+  -webkit-transform: rotateY(150deg) translateZ(124px)}
+    
+.strip .l {background-position: 429px 0;
+     -moz-transform: rotateY(165deg) translateZ(124px);
+  -webkit-transform: rotateY(165deg) translateZ(124px)} 
+    
+.strip .m {background-position: 396px 0;
+     -moz-transform: rotateY(180deg) translateZ(124px);
+  -webkit-transform: rotateY(180deg) translateZ(124px)}   
+    
+.strip .n {background-position: 363px 0;
+     -moz-transform: rotateY(195deg) translateZ(124px);
+  -webkit-transform: rotateY(195deg) translateZ(124px)}
+  
+.strip .o {background-position: 330px 0;
+     -moz-transform: rotateY(210deg) translateZ(124px);
+  -webkit-transform: rotateY(210deg) translateZ(124px)}
+  
+.strip .p {background-position: 297px 0;
+     -moz-transform: rotateY(225deg) translateZ(124px);
+  -webkit-transform: rotateY(225deg) translateZ(124px)} 
+  
+.strip .q {background-position: 264px 0;
+     -moz-transform: rotateY(240deg) translateZ(124px);
+  -webkit-transform: rotateY(240deg) translateZ(124px)} 
+  
+.strip .r {background-position: 231px 0;
+     -moz-transform: rotateY(255deg) translateZ(124px);
+  -webkit-transform: rotateY(255deg) translateZ(124px)}
+  
+.strip .s {background-position: 198px 0;
+     -moz-transform: rotateY(270deg) translateZ(124px);
+  -webkit-transform: rotateY(270deg) translateZ(124px)}
+  
+.strip .t {background-position: 165px 0;
+     -moz-transform: rotateY(285deg) translateZ(124px);
+  -webkit-transform: rotateY(285deg) translateZ(124px)} 
+  
+.strip .u {background-position: 132px 0;
+     -moz-transform: rotateY(300deg) translateZ(124px);
+  -webkit-transform: rotateY(300deg) translateZ(124px)} 
+  
+.strip .v {background-position: 99px 0;
+     -moz-transform: rotateY(315deg) translateZ(124px);
+  -webkit-transform: rotateY(315deg) translateZ(124px)}
+  
+.strip .w {background-position: 66px 0;
+     -moz-transform: rotateY(330deg) translateZ(124px);
+  -webkit-transform: rotateY(330deg) translateZ(124px)}
+  
+.strip .x {background-position: 33px 0;
+     -moz-transform: rotateY(345deg) translateZ(124px);
+  -webkit-transform: rotateY(345deg) translateZ(124px)}
+
+/*.strip .y {background-position: 0px 0;
+     -moz-transform: rotateY(0deg) translateZ(124px);
+  -webkit-transform: rotateY(0deg) translateZ(124px)}
+*/
+
+@-moz-keyframes spin {
+  from { -moz-transform: rotateY(-30deg)}
+  to   { -moz-transform: rotateY(-135deg)}}
+  
+@-webkit-keyframes spin {
+  from { -webkit-transform: rotateY(-30deg)}
+  to   { -webkit-transform: rotateY(-135deg)}}
