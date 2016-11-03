@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="assets/leaves.css" type="text/css" media="screen" charset="utf-8">
       <link rel="stylesheet" type="text/css" href="assets/flexslider.css">
-      <link rel="stylesheet" href="assets/star2.css" type="text/css" charset="utf-8">
+      <link rel="stylesheet" href="assets/star222.css" type="text/css" charset="utf-8">
       <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
       <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.0/jquery.flexslider-min.js"></script>-->
       <script type="text/javascript" src="assets/jquery.flexslider.js"></script>
@@ -194,6 +194,7 @@
            <div class="noDisplay" id="shareBtn">SHARE</div>
            <div class="noDisplay" id="skipBtn">SKIP</div>
            <div class="noDisplay" id="fbPic"></div>
+           <div class="noDisplay" id="fbPic2"></div>
 
            <div class="noDisplay" id="redeemFinal">REDEEM COUPON</div>
 
@@ -213,8 +214,18 @@
    </body>
    <script>
 
-   var player = document.getElementById('player');
-          var videoTracks;
+  //  var player = document.getElementById('player');
+  //  var videoTracks;
+  // var handleSuccess = function(stream) {
+  //   // Attach the video stream to the video element and autoplay.
+  //   player.srcObject = stream;
+  //   videoTracks = stream.getVideoTracks();
+  // };
+
+  var player = document.getElementById('player'); 
+  
+  var videoTracks;
+
   var handleSuccess = function(stream) {
     // Attach the video stream to the video element and autoplay.
     player.srcObject = stream;
@@ -414,6 +425,7 @@
         if($(".bail").hasClass('bailRev')){
       $(".sidebar").addClass("redeemClass")
       $("#congratulations").addClass("showDisplay")
+
       $("#shareBtn").addClass("showDisplay")
       $("#skipBtn").addClass("showDisplay")
       $("#endPic").addClass("showDisplay")
@@ -422,6 +434,9 @@
       videoTracks[0].stop();
 
       console.log("clicked redeemClass")
+      $("#shareBtn").click(function() {
+        $("#fbPic").addClass("showDisplay")
+        });
       }
       });
 
@@ -439,18 +454,43 @@
         
       });
 
+      $("#fbPic2").click(function() {
+         $("#congratulations").addClass("slideLeft")
+         
+        $("#shareBtn").addClass("slideLeft")
+        $("#skipBtn").addClass("slideLeft")
+        $("#endPic").addClass("slideLeft")
+        $("#fbPic2").removeClass("showDisplay")
+        $("#coffeeClip").addClass("slideLeft")
+        $(".coffeeCup").addClass("slideLeft")
+        $("#redeemFinal").addClass("showDisplay")
+        $("#redeemFinal").addClass("slideRedeem")
+        $("#redeemFinal").html("SHOP STARBUCKS")
+        
+      });
+
 
        $("#bail").click(function() {
         if (!$(".bail").hasClass("bailRev")) {
       $(".sidebar").addClass("shareClass")
       vid.pause();
+      videoTracks[0].stop();
+      $("#shareBtn").addClass("showDisplay")
+      $("#skipBtn").addClass("showDisplay")
+      $("#endPic").addClass("showDisplay")
+      $("#bail").addClass("noDisplay")
+      $("#congratulations").addClass("showDisplay")
+      $("#congratulations").html( "<span style='font-size:46pt'>Sorry! </span><span style='font-family:GillSansBold;line-height:'>WE HOPE YOUR PSL WAS<br>BETTER THAN YOUR DATE.</span>" )
       console.log("clicked shareClass")
+      $("#shareBtn").click(function() {
+        $("#fbPic2").addClass("showDisplay")
+        });
       }
       });
 
-       $("#shareBtn").click(function() {
-        $("#fbPic").addClass("showDisplay")
-        });
+       // $("#shareBtn").click(function() {
+       //  $("#fbPic").addClass("showDisplay")
+       //  });
 
         // if ( secs > 10 ){
         //  ++totalSeconds;
